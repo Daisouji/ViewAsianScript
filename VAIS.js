@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        New script - viewasian.co
+// @name        ViewAsianScript
 // @namespace   Violentmonkey Scripts
 // @match       https://viewasian.co/drama/*
 // @match       https://viewasian.co/watch/*
