@@ -31,8 +31,9 @@ document.addEventListener('keydown', (event) => {
   epnum = url.match(/ep=(\d+)/)[1]
 
 
-  nextpg = url.replace(epnum,Number(epnum)+1)
-  prevpg = url.replace(epnum,Number(epnum)-1)
+var n = url.lastIndexOf(epnum)
+nextpg = url.slice(0, n) + url.slice(n).replace(epnum,Number(epnum)+1);
+prevpg = url.slice(0, n) + url.slice(n).replace(epnum,Number(epnum)-1);
 
 
   if (name ==='n' && epnum < numberofEp){
